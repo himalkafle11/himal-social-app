@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+.registerPage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ****** WELCOME SIDE ****** */
+
+.registerTextBox {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.registerTitle {
+  color: #1f72e6;
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.registerText {
+  margin-left: 72px;
+  line-height: 1.6;
+}
+
+/* ******LOG IN SIDE ****** */
+
+.registerSide {
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 24px;
+  margin-bottom: 18px;
+}
+
+input {
+  width: 100%;
+  font-family: inherit;
+  height: 42px;
+  border: none;
+  border-radius: 7px;
+  background-color: #fff;
+  border: 2px solid #bbb;
+  font-size: 16px;
+  text-indent: 15px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  height: 42px;
+  background-color: #1f72e6;
+  border-radius: 7px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  margin-bottom: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.linkNew {
+  padding: 12px 36px;
+  border-radius: 7px;
+  font-size: 16px;
+  text-decoration: none;
+  margin: auto;
+  background-color: #45b72d;
+  color: white;
+  font-weight: 500;
+}

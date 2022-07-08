@@ -1,0 +1,40 @@
+import React from "react";
+import "./register.css";
+
+function Register() {
+  return (
+    <div className="registerPage">
+      <div className="registerTextBox">
+        <h1 className="registerTitle">HimalSocial</h1>
+        <p className="registerText">
+          Connect with friends and the world around you on HimalSocial.
+        </p>
+      </div>
+
+      <div className="registerSide">
+        <form className="registerForm">
+          <input className="registerInput" type="text" placeholder="Username" />
+          <input className="registerInput" type="email" placeholder="Email" />
+          <input
+            className="registerInput"
+            type="password"
+            placeholder="New Password"
+          />
+          <input
+            className="registerInput"
+            type="password"
+            placeholder="Confirm Password"
+          />
+          <button type="submit">Sign Up</button>
+        </form>
+        <div className="links">
+          <a className="linkNew" href="#">
+            Log Into Account
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Register;

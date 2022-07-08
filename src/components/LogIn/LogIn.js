@@ -1,5 +1,6 @@
 import React from "react";
 import "./logIn.css";
+import Home from "../../pages/Home/Home";
 
 function LogIn() {
   return (
