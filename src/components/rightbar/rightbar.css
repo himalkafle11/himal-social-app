@@ -3,9 +3,8 @@
   height: calc(100vh - 50px);
   overflow: scroll;
   position: sticky;
-  top: 0;
+  top: 50px;
   left: 0;
-  /* background-color: red; */
 }
 
 .rightbarWrapper {

@@ -1,7 +1,7 @@
-import Home from "./pages/Home/Home";
+import FullApp from "./pages/SocialApp/FullApp";
 
 function App() {
-  return <Home />;
+  return <FullApp />;
 }
 
 export default App;
