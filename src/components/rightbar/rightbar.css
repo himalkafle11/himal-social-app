@@ -1,7 +1,10 @@
 .rightbar {
   flex: 3.5;
-  margin: 0;
-  padding: 0;
+  height: calc(100vh - 50px);
+  overflow: scroll;
+  position: sticky;
+  top: 0;
+  left: 0;
   /* background-color: red; */
 }
 

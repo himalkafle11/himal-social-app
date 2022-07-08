@@ -1,4 +1,5 @@
 import "./sidebar.css";
+import SidebarFriends from "./SidebarFriends";
 import RssFeedIcon from "@mui/icons-material/RssFeed";
 import ChatIcon from "@mui/icons-material/Chat";
 import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
@@ -8,8 +9,12 @@ import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
 import InsertInvitationIcon from "@mui/icons-material/InsertInvitation";
 import SchoolIcon from "@mui/icons-material/School";
+import { users } from "../../DummyData";
 
 export default function Sidebar() {
+  const user = users.map((person) => {
+    return <SidebarFriends key={person.id} person={person} />;
+  });
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
@@ -53,80 +58,7 @@ export default function Sidebar() {
         </ul>
         <button className="sidebarButton">Show More</button>
         <hr className="sidebarHr" />
-        <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="../assets/person/2.jpeg"
-              alt="friend-img"
-            />
-            <span>Himal Kafle</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="../assets/person/2.jpeg"
-              alt="friend-img"
-            />
-            <span>Himal Kafle</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="../assets/person/2.jpeg"
-              alt="friend-img"
-            />
-            <span>Himal Kafle</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="../assets/person/2.jpeg"
-              alt="friend-img"
-            />
-            <span>Himal Kafle</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="../assets/person/2.jpeg"
-              alt="friend-img"
-            />
-            <span>Himal Kafle</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="../assets/person/2.jpeg"
-              alt="friend-img"
-            />
-            <span>Himal Kafle</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="../assets/person/2.jpeg"
-              alt="friend-img"
-            />
-            <span>Himal Kafle</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="../assets/person/2.jpeg"
-              alt="friend-img"
-            />
-            <span>Himal Kafle</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              className="sidebarFriendImg"
-              src="../assets/person/2.jpeg"
-              alt="friend-img"
-            />
-            <span>Himal Kafle</span>
-          </li>
-        </ul>
+        {user}
       </div>
     </div>
   );

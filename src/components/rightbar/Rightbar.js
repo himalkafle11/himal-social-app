@@ -1,6 +1,11 @@
 import "./rightbar.css";
+import RightbarOnlineFriends from "./RightbarOnlineFriends";
+import { users } from "../../DummyData";
 
 export default function Rightbar() {
+  const user = users.map((person) => {
+    return <RightbarOnlineFriends key={person.id} person={person} />;
+  });
   return (
     <div className="rightbar">
       <div className="rightbarWrapper">
@@ -19,74 +24,7 @@ export default function Rightbar() {
           <img className="rightbarAd" src="../assets/advert.jpg" alt="ad" />
         </div>
         <h4 className="rightbarTitle">Online Friends</h4>
-        <ul className="rightbarFriendList">
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img
-                className="rightbarProfileImg"
-                src="../assets/person/4.jpeg"
-                alt="friendProfile"
-              />
-              <span className="rightbarProfileStatus"></span>
-            </div>
-            <span className="rightbarUsername">Laxman Kafle</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img
-                className="rightbarProfileImg"
-                src="../assets/person/4.jpeg"
-                alt="friendProfile"
-              />
-              <span className="rightbarProfileStatus"></span>
-            </div>
-            <span className="rightbarUsername">Laxman Kafle</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img
-                className="rightbarProfileImg"
-                src="../assets/person/4.jpeg"
-                alt="friendProfile"
-              />
-              <span className="rightbarProfileStatus"></span>
-            </div>
-            <span className="rightbarUsername">Laxman Kafle</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img
-                className="rightbarProfileImg"
-                src="../assets/person/4.jpeg"
-                alt="friendProfile"
-              />
-              <span className="rightbarProfileStatus"></span>
-            </div>
-            <span className="rightbarUsername">Laxman Kafle</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img
-                className="rightbarProfileImg"
-                src="../assets/person/4.jpeg"
-                alt="friendProfile"
-              />
-              <span className="rightbarProfileStatus"></span>
-            </div>
-            <span className="rightbarUsername">Laxman Kafle</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img
-                className="rightbarProfileImg"
-                src="../assets/person/4.jpeg"
-                alt="friendProfile"
-              />
-              <span className="rightbarProfileStatus"></span>
-            </div>
-            <span className="rightbarUsername">Laxman Kafle</span>
-          </li>
-        </ul>
+        <ul className="rightbarFriendList">{user}</ul>
       </div>
     </div>
   );
