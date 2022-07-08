@@ -7,8 +7,8 @@ function FullApp() {
   return (
     <>
       {/* <LogIn /> */}
-      <Register />
-      {/* <Home /> */}
+      {/* <Register /> */}
+      <Home />
     </>
   );
 }

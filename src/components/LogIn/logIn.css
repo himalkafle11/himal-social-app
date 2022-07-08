@@ -1,10 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #ddd;
 }
 
 .logInPage {
+  background-color: #ddd;
+
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -53,7 +54,7 @@
   gap: 24px;
 }
 
-input {
+.inputFormLogIn {
   width: 100%;
   font-family: inherit;
   height: 42px;
@@ -65,11 +66,11 @@ input {
   text-indent: 15px;
 }
 
-input:focus {
+.inputFormLogIn:focus {
   outline: none;
 }
 
-button {
+.buttonLogIn {
   height: 42px;
   background-color: #1f72e6;
   border-radius: 7px;

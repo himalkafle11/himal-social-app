@@ -25,10 +25,12 @@ function Register() {
             type="password"
             placeholder="Confirm Password"
           />
-          <button type="submit">Sign Up</button>
+          <button className="registerButton" type="submit">
+            Sign Up
+          </button>
         </form>
         <div className="links">
-          <a className="linkNew" href="#">
+          <a className="linkNewRegister" href="#">
             Log Into Account
           </a>
         </div>

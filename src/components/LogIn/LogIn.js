@@ -14,9 +14,15 @@ function LogIn() {
 
       <div className="loginSide">
         <form className="loginForm">
-          <input className="inputForm" type="email" placeholder="Email" />
-          <input className="inputForm" type="password" placeholder="Password" />
-          <button type="submit">Log In</button>
+          <input className="inputFormLogIn" type="email" placeholder="Email" />
+          <input
+            className="inputFormLogIn"
+            type="password"
+            placeholder="Password"
+          />
+          <button className="buttonLogIn" type="submit">
+            Log In
+          </button>
         </form>
         <div className="links">
           <a className="linkForgot" href="#">
