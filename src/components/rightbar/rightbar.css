@@ -26,7 +26,6 @@
 .rightbarAdContainer {
   height: 400px;
   width: 100%;
-  background-color: red;
   margin-bottom: 20px;
 }
 .rightbarAd {
@@ -58,12 +57,12 @@
 
 .rightbarProfileStatus {
   position: absolute;
-  height: 16px;
-  width: 16px;
+  height: 12px;
+  width: 12px;
   border-radius: 50%;
-  background-color: greenyellow;
-  top: -3px;
-  right: -8px;
+  background-color: rgb(36, 136, 36);
+  top: -1px;
+  right: -3px;
 }
 
 .rightbarProfileImg {

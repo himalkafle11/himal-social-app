@@ -44,6 +44,11 @@
   margin: 20px 0;
 }
 
+.postText {
+  width: 90%;
+  white-space: wrap;
+}
+
 .postImg {
   margin-top: 20px;
   width: 100%;

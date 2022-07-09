@@ -5,7 +5,7 @@ import { Posts } from "../../DummyData";
 
 export default function Feedbar() {
   const feedPosts = Posts.map((feedPost) => {
-    return <Post key={feedPost.id} feedPost={feedPost} />;
+    return <Post key={feedPost.id} post={feedPost} />;
   });
   return (
     <div className="feedbar">

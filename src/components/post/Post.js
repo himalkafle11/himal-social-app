@@ -1,9 +1,16 @@
 import "./post.css";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import { Portal } from "@mui/material";
+import { useState } from "react";
 
-export default function Post(props) {
-  console.log(props);
+export default function Post({ post }) {
+  const [like, setLike] = useState(post.postLikes);
+  const [isLiked, setIsLiked] = useState(false);
+
+  const likeHandler = () => {
+    setLike(isLiked ? like - 1 : like + 1);
+    setIsLiked(!isLiked);
+  };
+
   return (
     <div className="post">
       <div className="postWrapper">
@@ -11,34 +18,38 @@ export default function Post(props) {
           <div className="postTopLeft">
             <img
               className="postProfileImg"
-              src={`../assets/${props.feedPost.postProfile}`}
+              src={`../assets/${post.postProfile}`}
+              alt="profilePicture"
             />
-            <span className="postUserName">{props.feedPost.postUsername}</span>
-            <span className="postDate">{props.feedPost.postTime}</span>
+            <span className="postUserName">{post.postUsername}</span>
+            <span className="postDate">{post.postTime}</span>
           </div>
           <div className="postTopRight">
             <MoreVertIcon className="postTopIcon" />
           </div>
         </div>
         <div className="postCenter">
-          <span className="postText">{props.feedPost.postCaption}</span>
-          <img
-            className="postImg"
-            src={`../assets/${props.feedPost.postImg}`}
-          />
+          <span className="postText">{post?.postCaption}</span>
+          <img className="postImg" src={`../assets/${post.postImg}`} alt="" />
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
-            <img className="postLike" src="../assets/like.png" />
-            <img className="postLike" src="../assets/heart.png" />
-            <span className="postLikeCount">
-              {props.feedPost.postLikes} likes
-            </span>
+            <img
+              className="postLike"
+              src="../assets/like.png"
+              onClick={likeHandler}
+              alt=""
+            />
+            <img
+              className="postLike"
+              src="../assets/heart.png"
+              onClick={likeHandler}
+              alt=""
+            />
+            <span className="postLikeCount">{like} likes</span>
           </div>
           <div className="postBottomRight">
-            <span className="postComments">
-              {props.feedPost.postComments} comments
-            </span>
+            <span className="postComments">{post.postComments} comments</span>
           </div>
         </div>
       </div>
