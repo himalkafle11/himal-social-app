@@ -1,7 +1,9 @@
 import React from "react";
 import "./register.css";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
+  const navigate = useNavigate();
   return (
     <div className="registerPage">
       <div className="registerTextBox">
@@ -25,12 +27,20 @@ function Register() {
             type="password"
             placeholder="Confirm Password"
           />
-          <button className="registerButton" type="submit">
+          <button
+            onClick={() => navigate("/")}
+            className="registerButton"
+            type="submit"
+          >
             Sign Up
           </button>
         </form>
         <div className="links">
-          <a className="linkNewRegister" href="#">
+          <a
+            onClick={() => navigate("/home")}
+            className="linkNewRegister"
+            href="#"
+          >
             Log Into Account
           </a>
         </div>

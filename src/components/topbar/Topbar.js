@@ -1,6 +1,9 @@
 import "./topbar.css";
 import { Search, Person, Chat, Notifications } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
+
 export default function Topbar() {
+  const navigate = useNavigate();
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
@@ -38,6 +41,7 @@ export default function Topbar() {
           src="/assets/person/1.jpg"
           alt="profilePicture"
           className="topbar-img"
+          onClick={() => navigate("profile")}
         />
       </div>
     </div>

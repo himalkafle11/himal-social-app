@@ -1,8 +1,10 @@
 import React from "react";
 import "./logIn.css";
 import Home from "../../pages/Home/Home";
+import { useNavigate } from "react-router-dom";
 
 function LogIn() {
+  const navigate = useNavigate();
   return (
     <div className="logInPage">
       <div className="loginWelcomeText">
@@ -20,7 +22,11 @@ function LogIn() {
             type="password"
             placeholder="Password"
           />
-          <button className="buttonLogIn" type="submit">
+          <button
+            onClick={() => navigate("home")}
+            className="buttonLogIn"
+            type="submit"
+          >
             Log In
           </button>
         </form>
@@ -28,9 +34,13 @@ function LogIn() {
           <a className="linkForgot" href="#">
             Forgot password?
           </a>
-          <a className="linkNew" href="#">
+          <button
+            onClick={() => navigate("/home/profile/register")}
+            className="linkNew"
+            // href="#"
+          >
             Create New Account
-          </a>
+          </button>
         </div>
       </div>
     </div>
