@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./logIn.css";
-import Home from "../../pages/Home/Home";
 import { useNavigate } from "react-router-dom";
 
 function LogIn() {
   const navigate = useNavigate();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const home = () => navigate("home");
+
+  const register = () => navigate("/home/profile/register");
+
   return (
     <div className="logInPage">
       <div className="loginWelcomeText">
@@ -15,15 +22,35 @@ function LogIn() {
       </div>
 
       <div className="loginSide">
-        <form className="loginForm">
-          <input className="inputFormLogIn" type="email" placeholder="Email" />
+        <form action="" className="loginForm">
+          <input
+            className="inputFormLogIn"
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            autoComplete="off"
+            placeholder="Email"
+          />
           <input
             className="inputFormLogIn"
             type="password"
+            value={password}
             placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)}
+            autoComplete="off"
           />
           <button
-            onClick={() => navigate("home")}
+            onClick={() => {
+              if (
+                email === "himalkafle11@gmail.com" &&
+                password === "password"
+              ) {
+                home();
+                return;
+              } else {
+                alert("Please enter the valid email and password");
+              }
+            }}
             className="buttonLogIn"
             type="submit"
           >
@@ -31,14 +58,10 @@ function LogIn() {
           </button>
         </form>
         <div className="links">
-          <a className="linkForgot" href="#">
+          <a className="linkForgot" href={"#"}>
             Forgot password?
           </a>
-          <button
-            onClick={() => navigate("/home/profile/register")}
-            className="linkNew"
-            // href="#"
-          >
+          <button onClick={register} className="linkNew">
             Create New Account
           </button>
         </div>
