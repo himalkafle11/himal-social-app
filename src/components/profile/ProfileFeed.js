@@ -1,9 +1,8 @@
-import "./post.css";
+import "../post/post.css";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import NewPost from "./NewPost";
 import { useState } from "react";
 
-export default function Post({ post }) {
+export default function ProfileFeed({ post }) {
   const [like, setLike] = useState(post.postLikes);
   const [isLiked, setIsLiked] = useState(false);
 

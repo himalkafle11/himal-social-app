@@ -51,6 +51,89 @@ const users = [
   },
 ];
 
+const friends = [
+  {
+    id: 1,
+    userName: "Himal Kafle",
+    profilePic: "person/1.jpg",
+  },
+  {
+    id: 2,
+    userName: "Ayush Poudel",
+    profilePic: "person/6.jpg",
+  },
+  {
+    id: 3,
+    userName: "Lakshimi Kafle",
+    profilePic: "person/4.jpg",
+  },
+  {
+    id: 4,
+    userName: "Ayusha Shah",
+    profilePic: "person/2.jpg",
+  },
+  {
+    id: 5,
+    userName: "Himal Kafle",
+    profilePic: "person/3.jpg",
+  },
+  {
+    id: 6,
+    userName: "Himal Kafle",
+    profilePic: "person/5.jpg",
+  },
+  {
+    id: 7,
+    userName: "Himal Kafle",
+    profilePic: "person/7.jpg",
+  },
+  {
+    id: 8,
+    userName: "Himal Kafle",
+    profilePic: "person/8.jpg",
+  },
+  {
+    id: 9,
+    userName: "Himal Kafle",
+    profilePic: "person/1.jpg",
+  },
+  {
+    id: 10,
+    userName: "Ayush Poudel",
+    profilePic: "person/6.jpg",
+  },
+  {
+    id: 11,
+    userName: "Lakshimi Kafle",
+    profilePic: "person/4.jpg",
+  },
+  {
+    id: 12,
+    userName: "Ayusha Shah",
+    profilePic: "person/2.jpg",
+  },
+  {
+    id: 13,
+    userName: "Himal Kafle",
+    profilePic: "person/3.jpg",
+  },
+  {
+    id: 14,
+    userName: "Himal Kafle",
+    profilePic: "person/5.jpg",
+  },
+  {
+    id: 15,
+    userName: "Himal Kafle",
+    profilePic: "person/7.jpg",
+  },
+  {
+    id: 16,
+    userName: "Himal Kafle",
+    profilePic: "person/8.jpg",
+  },
+];
+
 const Posts = [
   {
     id: 1,
@@ -134,4 +217,87 @@ const Posts = [
   },
 ];
 
-export { Posts, users };
+const profilePosts = [
+  {
+    id: 1,
+    postProfile: "person/1.jpg",
+    postUsername: "Himal Kafle",
+    postTime: "5 mins ago",
+    postCaption: "Hey its my first post:)",
+    postImg: "person/1.jpg",
+    postLikes: 53,
+    postComments: 23,
+  },
+  {
+    id: 2,
+    postProfile: "person/1.jpg",
+    postUsername: "Himal Kafle",
+    postTime: "5 mins ago",
+    postCaption: "Hey its my first post:)",
+    postImg: "person/2.jpg",
+    postLikes: 53,
+    postComments: 23,
+  },
+  {
+    id: 3,
+    postProfile: "person/1.jpg",
+    postUsername: "Himal Kafle",
+    postTime: "5 mins ago",
+    postCaption: "Hey its my first post:)",
+    postImg: "person/3.jpg",
+    postLikes: 53,
+    postComments: 23,
+  },
+  {
+    id: 4,
+    postProfile: "person/1.jpg",
+    postUsername: "Himal Kafle",
+    postTime: "5 mins ago",
+    postCaption: "Hey its my first post:)",
+    postImg: "person/4.jpg",
+    postLikes: 53,
+    postComments: 23,
+  },
+  {
+    id: 5,
+    postProfile: "person/1.jpg",
+    postUsername: "Himal Kafle",
+    postTime: "5 mins ago",
+    postCaption: "Hey its my first post:)",
+    postImg: "person/5.jpg",
+    postLikes: 53,
+    postComments: 23,
+  },
+  {
+    id: 6,
+    postProfile: "person/1.jpg",
+    postUsername: "Himal Kafle",
+    postTime: "5 mins ago",
+    postCaption: "Hey its my first post:)",
+    postImg: "person/6.jpg",
+    postLikes: 53,
+    postComments: 23,
+  },
+  {
+    id: 7,
+    postProfile: "person/1.jpg",
+    postUsername: "Himal Kafle",
+    postTime: "5 mins ago",
+    postCaption: "Hey its my first post:)",
+    postImg: "person/7.jpg",
+    postLikes: 53,
+    postComments: 23,
+  },
+  {
+    id: 8,
+    postProfile: "person/1.jpg",
+    postUsername: "Himal Kafle",
+    postTime: "5 mins ago",
+    postCaption: "Hey its my first post:)",
+    postImg: "person/8.jpg",
+    postLikes: 53,
+    postComments: 23,
+  },
+];
+
+export { Posts, users, profilePosts, friends };

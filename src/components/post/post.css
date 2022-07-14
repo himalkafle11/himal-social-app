@@ -1,6 +1,12 @@
 .post {
   padding: 0 20px 20px;
 }
+/* NEW--POST */
+.new-post {
+  display: none;
+}
+
+/* NEWSFEED */
 
 .postWrapper {
   padding: 10px;

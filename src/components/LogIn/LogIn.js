@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./logIn.css";
 import { useNavigate } from "react-router-dom";
 
@@ -46,6 +46,7 @@ function LogIn() {
                 password === "password"
               ) {
                 home();
+
                 return;
               } else {
                 alert("Please enter the valid email and password");
