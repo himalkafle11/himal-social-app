@@ -132,6 +132,11 @@ const friends = [
     userName: "Himal Kafle",
     profilePic: "person/8.jpg",
   },
+  {
+    id: 17,
+    userName: "Himal Kafle",
+    profilePic: "person/7.jpg",
+  },
 ];
 
 const Posts = [

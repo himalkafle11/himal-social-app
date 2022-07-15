@@ -1,7 +1,6 @@
 import React from "react";
 import "./profile.css";
 import { useNavigate } from "react-router-dom";
-import Sidebar from "../sidebar/Sidebar";
 import { profilePosts, friends } from "../../DummyData";
 import ProfileFeed from "../profile/ProfileFeed";
 import ProfileFriends from "./ProfileFriends";
@@ -21,10 +20,6 @@ function Profile() {
     <>
       <PorfileTopbar />
       <div className="profilePage">
-        <div className="profileSidebar">
-          <Sidebar />
-        </div>
-
         <div className="profileCoverPostFriends">
           <div className="profilePicCover">
             <img className="profileCover" src="../../assets/person/9.jpg" />
@@ -44,11 +39,23 @@ function Profile() {
                 <div className="profileFeed">{profile}</div>
               </div>
             </div>
-            <div className="friendsProfile">{user}</div>
+            <div className="friendsProfile">
+              <div className="profileIntro">
+                <p className="introName">Name:Himal Kafle</p>
+                <p className="introCountry">Country:Nepal</p>
+                <p className="introCity">City:Kathmandu</p>
+                <p className="introStatus">Realtionship:Single</p>
+              </div>
+              <div className="profileFriendsTexts">
+                <div className="profileFriendsText">All My Friends</div>
+                <div className="profileFriendsText">Mutual Friends</div>
+              </div>
+              <div className="profileFriendsList">{user}</div>
+            </div>
           </div>
-
-          {/* <button onClick={() => navigate("register")}>Register</button> */}
         </div>
+
+        {/* <button onClick={() => navigate("register")}>Register</button> */}
       </div>
     </>
   );
