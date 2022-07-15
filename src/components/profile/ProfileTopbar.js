@@ -2,8 +2,12 @@ import "./profileTopbar.css";
 import { Search } from "@mui/icons-material";
 import HorizontalSplitIcon from "@mui/icons-material/HorizontalSplit";
 import { useNavigate } from "react-router-dom";
+import Modal from "../Modals/Modal";
+import React, { useState } from "react";
 
 export default function PorfileTopbar() {
+  const [openModal, setOpenModal] = useState(false);
+
   const navigate = useNavigate();
   return (
     <div className="profileTopbarContainer">
@@ -28,9 +32,15 @@ export default function PorfileTopbar() {
           <span className="profileTopbarLink">My Friends</span>
         </div>
 
-        <div className="profileExits">
+        <div
+          className="profileExits"
+          onClick={() => {
+            setOpenModal(true);
+          }}
+        >
           <HorizontalSplitIcon />
         </div>
+        {openModal && <Modal closeModal={setOpenModal} />}
       </div>
     </div>
   );

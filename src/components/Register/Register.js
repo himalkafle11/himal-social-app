@@ -27,20 +27,12 @@ function Register() {
             type="password"
             placeholder="Confirm Password"
           />
-          <button
-            onClick={() => navigate("/")}
-            className="registerButton"
-            type="submit"
-          >
+          <button className="registerButton" type="submit">
             Sign Up
           </button>
         </form>
         <div className="links">
-          <a
-            onClick={() => navigate("/home")}
-            className="linkNewRegister"
-            href="#"
-          >
+          <a onClick={() => navigate("/")} className="linkNewRegister" href="#">
             Log Into Account
           </a>
         </div>

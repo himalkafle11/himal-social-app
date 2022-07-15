@@ -1,10 +1,9 @@
 import React from "react";
 import "./profile.css";
-import { useNavigate } from "react-router-dom";
+
 import { profilePosts, friends } from "../../DummyData";
 import ProfileFeed from "../profile/ProfileFeed";
 import ProfileFriends from "./ProfileFriends";
-
 import Share from "../share/Share";
 import PorfileTopbar from "./ProfileTopbar";
 
@@ -15,7 +14,6 @@ function Profile() {
   const user = friends.map((person) => {
     return <ProfileFriends key={person.id} person={person} />;
   });
-  const navigate = useNavigate();
   return (
     <>
       <PorfileTopbar />
@@ -54,8 +52,6 @@ function Profile() {
             </div>
           </div>
         </div>
-
-        {/* <button onClick={() => navigate("register")}>Register</button> */}
       </div>
     </>
   );
