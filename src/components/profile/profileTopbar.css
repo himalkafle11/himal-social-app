@@ -1,0 +1,61 @@
+.profileTopbarContainer {
+  height: 50px;
+  width: 100%;
+  background-color: #1877f2;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.profileTopbarLeft {
+  flex: 3;
+}
+.logo {
+  font-size: 24px;
+  color: white;
+  margin-left: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.profileTopbarCenter {
+  flex: 5;
+}
+.searchBar {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+.searchBarIcon {
+  font-size: 20px !important;
+  margin-left: 10px;
+}
+.searchInput {
+  border: none;
+  width: 70%;
+}
+.searchInput:focus {
+  outline: none;
+}
+
+.profileTopbarRight {
+  display: flex;
+  flex: 4;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.profileTopbarLink {
+  margin-right: 48px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.profileExits {
+  margin-left: 86px;
+  cursor: pointer;
+}

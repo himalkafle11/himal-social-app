@@ -5,8 +5,9 @@ import Sidebar from "../sidebar/Sidebar";
 import { profilePosts, friends } from "../../DummyData";
 import ProfileFeed from "../profile/ProfileFeed";
 import ProfileFriends from "./ProfileFriends";
-import Topbar from "../../components/topbar/Topbar";
+
 import Share from "../share/Share";
+import PorfileTopbar from "./ProfileTopbar";
 
 function Profile() {
   const profile = profilePosts.map((profilePost) => {
@@ -18,7 +19,7 @@ function Profile() {
   const navigate = useNavigate();
   return (
     <>
-      <Topbar />
+      <PorfileTopbar />
       <div className="profilePage">
         <div className="profileSidebar">
           <Sidebar />
